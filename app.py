@@ -37,10 +37,17 @@ cascade_path = os.path.join(
     "haarcascade_frontalface_default.xml"
 )
 
+import os
+
+cascade_path = os.path.join(
+    cv2.data.haarcascades,
+    "haarcascade_frontalface_default.xml"
+)
+
 face_cascade = cv2.CascadeClassifier(cascade_path)
 
 if face_cascade.empty():
-    st.error(f"Haar Cascade file not found!\nPath: {cascade_path}")
+    st.error("Face detector not loaded!")
     st.stop()
 
 # ==========================
