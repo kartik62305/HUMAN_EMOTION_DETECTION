@@ -1,6 +1,6 @@
 streamlit
-tensorflow==2.19.0
-opencv-python==4.10.0.84
+tensorflow==2.16.1
+opencv-python-headless==4.10.0.84
 numpy
 matplotlib
 scikit-learn
